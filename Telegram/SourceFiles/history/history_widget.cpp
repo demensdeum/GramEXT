@@ -930,6 +930,8 @@ HistoryWidget::HistoryWidget(
 	setupSendAsToggle();
 	orderWidgets();
 	setupShortcuts();
+
+	std::cout << "YOLO6"  << std::endl;
 }
 
 void HistoryWidget::setGeometryWithTopMoved(

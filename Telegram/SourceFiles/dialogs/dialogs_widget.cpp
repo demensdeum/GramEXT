@@ -653,6 +653,8 @@ Widget::Widget(
 
 		setupMoreChatsBar();
 		setupDownloadBar();
+
+		std::cout << "YOLO3" << std::endl;
 	}
 }
 

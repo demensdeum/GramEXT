@@ -18,6 +18,7 @@ namespace Ui {
 
 SearchFieldController::SearchFieldController(const QString &query)
 : _query(query) {
+	std::cout << "YOLO5" << std::endl;
 }
 
 auto SearchFieldController::createRowView(

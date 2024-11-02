@@ -48,7 +48,11 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 #include "styles/style_layers.h"
 #include "styles/style_window.h"
 
+#include "ext/Controller/Controller.h"
+
 #include <QtGui/QWindow>
+
+#include <iostream>
 
 namespace {
 
@@ -83,6 +87,11 @@ const char kOptionAutoScrollInactiveChat[]
 
 MainWindow::MainWindow(not_null<Window::Controller*> controller)
 : Platform::MainWindow(controller) {
+
+	std::cout << "YOLO" << std::endl;
+
+	GramExt::Controller::initialize();
+
 	resize(st::windowDefaultWidth, st::windowDefaultHeight);
 
 	setLocale(QLocale(QLocale::English, QLocale::UnitedStates));

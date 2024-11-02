@@ -424,6 +424,9 @@ Fn<void(QString now, Fn<void(QString)> save)> DefaultEditLanguageCallback(
 }
 
 void InitMessageFieldHandlers(MessageFieldHandlersArgs &&args) {
+
+	std::cout << "YOLO2" << std::endl;
+
 	const auto paused = [passed = args.customEmojiPaused] {
 		return passed && passed();
 	};
